@@ -1,0 +1,440 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul, li{
+    list-style: none;
+}
+
+/* VARIABLES */
+:root{
+    --back-intro-email: hsl(217, 28%, 15%); 
+    --back-main: hsl(218, 28%, 13%);
+    --back-footer: hsl(216, 53%, 9%);
+    --back-testimonials: hsl(219, 30%, 18%);
+
+    --cyan-gradient: hsl(176, 68%, 64%);
+    --blue-gradient: hsl(198, 60%, 50%);
+    --error-red: hsl(0, 100%, 63%);
+
+    --white: hsl(0, 0%, 100%);
+
+    --font-raleway:  'Raleway', sans-serif;
+    --font-open: 'Open Sans', sans-serif;
+}
+
+/* BODY */
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    background-color: var(--back-main);
+    color: var(--white);
+    font-family: var(--font-open);
+    text-align: center;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/* MAIN */
+main{
+    position: relative;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 10%;
+    padding: 2rem 1.8rem;
+    margin-bottom: 4rem;
+    font-family: var(--font-raleway);
+    font-weight: 400;
+}
+header img{
+    width: 80px;
+    float: left;
+}
+header nav{
+    float: right;
+}
+header nav ul li{
+    display: inline;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+header nav ul #first{
+    margin-left: 0;
+}
+header nav ul li a{
+    color: var(--white);
+}
+header nav ul li a:hover{
+    color: var(--blue-gradient);
+    animation: bounce .4s;
+}
+@keyframes bounce{
+    10%{
+        transform: translateY(-7px);
+    }
+}
+
+
+/* TEXT 1 */
+.text1{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 9rem;
+}
+.text1 img{
+    width: 80%;
+}
+.text1 h2{
+    margin: 2rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 2.7rem;
+}
+.text1 p{
+    margin: 0 4.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* BUTTON */
+.btn{
+    width: 60%;
+    padding: 1rem;
+    border-radius: 3rem;
+    margin: auto;
+    color: var(--white);
+    background-image: linear-gradient(to right, var(--cyan-gradient) ,var(--blue-gradient));
+    text-align: center;
+}
+
+/* ICONS */
+.icons{
+    margin-bottom: 9rem;
+}
+.icons .icon{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+.icons .icon img{
+    width: 15%;
+    margin-bottom: 1rem;
+}
+.icons .icon-2 img{
+    width: 13%;
+}
+.icons .icon h2{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.icons .icon p{
+    width: 75%;
+    font-size: 1.1rem;
+    margin: auto;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+/* TEXT2 */
+.text2{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 9rem;
+}
+.text2 img{
+    width: 90%;
+    margin-bottom: 2rem;
+}
+.text2 h2, p, a{
+    text-align: left;
+}
+.text2 h2{
+    margin-bottom: 1rem;
+}
+.text2 p{
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+}
+.text2 a{
+    color: var(--cyan-gradient);
+    border-bottom: 1px solid var(--cyan-gradient);
+    padding-bottom: 0.3rem;
+    position: relative;
+    float: left;
+}
+.text2 a .bx-right-arrow-alt{
+    border: 1px solid var(--cyan-gradient);
+    box-shadow: 1px 0px 3px var(--cyan-gradient);
+    border-radius: 2rem;
+    background: var(--cyan-gradient);
+    color: black;
+}
+
+/* TESTIMONIALS */
+.testimonials{
+    clear: both;
+    margin: auto;
+    margin-bottom: 26rem;
+}
+.testimonials .testimonial1{
+    position: relative;
+}
+.testimonials #quote{
+    margin: 0;
+    float: none;
+    border-radius: 0;
+    width: 30px;
+    position: absolute;
+    top: -11%;
+    left: 2%;
+}
+.testimonials .testimonial{
+    max-width: 80%;
+    margin: auto;
+    background-color: var(--back-testimonials);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.testimonials .testimonial img{
+    width: 30px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1rem;
+}
+.testimonials .testimonial h3{
+    text-align: left;
+    font-size: 0.9rem;
+    margin-top: -0.2rem;
+    margin-bottom: 0.2rem;
+}
+.testimonials .testimonial .depoiment{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+.testimonials .testimonial p{
+    font-size: 0.7rem;
+    font-family: var(--font-raleway);
+}
+
+/* FORM */
+.form{
+    width: 80%;
+    background-color: var(--back-intro-email);
+    padding: 2rem;
+    margin: auto;
+    position: absolute;
+    top: 107%;
+    left: 50%;
+    transform: translate(-50%, -1%);
+}
+.form form h2{
+    margin-bottom: 1rem;
+}
+.form form p{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form form .input-container #email, .form form .btn-form{
+    width: 95%;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    border: 1px solid hsl(0, 0%, 46%);
+}
+.form form .input-container p{
+    color: var(--error-red);
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    display: none;
+}
+.form form .btn-form{
+    margin-top: 1.5rem;
+    background-image: none;
+    background-color: var(--blue-gradient);
+}
+
+
+/* FOOTER */
+footer{
+    background-color: var(--back-footer);
+    padding: 3rem 2.5rem;
+    padding-top: 17rem;
+}
+footer img{
+    float: left;
+    margin-bottom: 2.5rem;
+    margin-left: 1rem;
+}
+footer .tiny-icons{
+    clear: both;
+    margin-bottom: 4rem;
+}
+footer .tiny-icons .mini-icons{
+    text-align: left;
+    margin-top: 1.5rem;
+}
+footer .tiny-icons .mini-icons img{
+    margin: 0;
+    margin-right: 1rem;
+}
+
+footer .list{
+    text-align: left;
+    margin-bottom: 2.5rem;
+}
+footer .list li{
+    margin-bottom: 1rem;
+}
+
+footer .social-media{
+    margin-bottom: 2rem;
+}
+footer .social-media .bx{
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 0.3rem;
+    border-radius: 2rem;
+    margin-right: 0.5rem;
+}
+footer .social-media .bx:hover{
+    color: var(--blue-gradient);
+    border: 1px solid var(--blue-gradient);
+    animation: bounce .4s;
+}
+
+footer #me{
+    text-align: center;
+}
+footer #me a{
+    color: var(--white);
+}
+footer #me a:hover{
+    color: var(--blue-gradient);
+}
+
+@media screen and (min-width: 750px) {
+    :root{
+        font-size: 14px;
+    }
+    
+    .text1 p{
+        text-align: center;
+    }
+
+    .icons{
+        display: grid;
+        grid-template-areas: 
+        "icon1 icon2"
+        "icon3 icon4";
+        max-width: 750px;
+        margin: auto;
+    }
+    .icons .icon-1 h2{
+        margin-top: 0.3rem;
+    }
+    .icons .icon-1, .icons .icon-2{
+        margin-top: 0;
+    }
+
+    .text2{
+        display: grid;
+        grid-template-areas: 
+        "img text";
+        margin-top: 7rem;
+        gap: 1rem;
+        max-width: 1066px;
+    }
+    .text2 img{
+        min-width: 300px;
+        max-width: 550px;
+        margin: 0;
+        margin-top: 2rem;
+    }
+    .text2 #text{
+        min-width: 300px;
+        max-width: 400px;
+    }
+    .text2 #text h2{
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+    .testimonials .testimonial{
+        width: 60%;
+    }
+
+    .form{
+        width: 750px;
+        height: 250px;
+        top: 110%;
+    }
+    .form form p{
+        width: 600px;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    .form form .input-container{
+        display: inline-block;
+        width: 60%;
+        margin-right: 235px;
+    }
+    .form form .input-container #email{
+        width: 100%;
+    }
+    .form form .btn-form{
+        display: inline-block;
+        width: 30%;
+        margin-top: 0;
+        margin-left: 1rem;
+        position: absolute;
+        top: 61%;
+        left: 62%;
+        transform: translate(0, -50%);
+    }
+    .form form .input-container .msg-error{
+        display: inline;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "tiny-icons list1 list2 social-media";
+        clear: both;
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (min-width: 1000px){
+    .testimonials{
+        display: grid;
+        grid-template-areas: 
+        "testomials1 testimonials2 testimonials3";
+        margin: 0 auto;
+        margin-bottom: 26rem;
+    }
+    .testimonials .testimonial{
+        width: 340px;
+        margin: 0;
+    }
+    .testimonials .testimonial1{
+        margin-left: auto;
+        height: 232px;
+    }
+    .testimonials .testimonial2{
+        margin: 0 auto;
+    }
+    .testimonial .testimonial3{
+        margin-right: 1rem;
+    }
+}
