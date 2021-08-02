@@ -10,10 +10,7 @@ This is a challenge proposed by the website **[Frontend Mentor](https://www.fron
 
 This challenge is to reproduce this **Fylo dark theme landing page** as close as possible to the original design.
 
-[    FALAR AS DIFICULDADES QUE TIVE NO DESAFIO             ]
-My biggest difficulties in this challenge were centering the div with the container-2 class, as I wasn't managing to align to the center in the "traditional" ways, so I used the flex display and managed to align all the elements. 
 
-My other difficulty was to put this white background on Victor's image, my solution for that was to wrap the image in a div with a white background and adjust it with the position absolute
 
 ## Technologies Used 🧩
 
@@ -26,4 +23,4 @@ My other difficulty was to put this white background on Victor's image, my solut
 
 ## Access My Resolution 💻
 
-   I hosted this challenge with the help of GitHub Pages to access my resolution of this challenge [Click Here](https://samueloliveiraa.github.io/fylo-dark-theme-landing-page-master/)
+   I hosted this challenge with the help of GitHub Pages, to access my resolution of this challenge [Click Here](https://samueloliveiraa.github.io/fylo-dark-theme-landing-page-master/)
