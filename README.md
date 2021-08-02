@@ -10,7 +10,7 @@ This is a challenge proposed by the website **[Frontend Mentor](https://www.fron
 
 This challenge is to reproduce this **Fylo dark theme landing page** as close as possible to the original design.
 
-
+In this challenge my biggest difficulty was to implement the smooth scrolling of the page with pure JavaScript, in no way I was able to make it work, with that I had to use the Jquery library and only with it I was able to make the scrolling work the way I wanted. Email validation I did with pure JavaScript
 
 ## Technologies Used 🧩
 
