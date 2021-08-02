@@ -26,4 +26,4 @@ My other difficulty was to put this white background on Victor's image, my solut
 
 ## Access My Resolution 💻
 
-   I hosted this and other challenges on the [Netlify](https://app.netlify.com) website. To access my resolution of this challenge [Click Here](https://cartao-de-componente.netlify.app/)
+   I hosted this challenge with the help of GitHub Pages to access my resolution of this challenge [Click Here](https://samueloliveiraa.github.io/fylo-dark-theme-landing-page-master/)
