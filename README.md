@@ -17,10 +17,12 @@ My other difficulty was to put this white background on Victor's image, my solut
 
 ## Technologies Used 🧩
 
-[ TECNOLOGIAS UTILIZADAS ]
-
 * HTML5
 * CSS3
+* JavaScript
+* Jquery
+* Media-queries
+* CSS Grid Layout
 
 ## Access My Resolution 💻
 
