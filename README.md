@@ -20,6 +20,7 @@ In this challenge my biggest difficulty was to implement the smooth scrolling of
 * Jquery
 * Media-queries
 * CSS Grid Layout
+* Responsive Website
 
 ## Access My Resolution 💻
 
