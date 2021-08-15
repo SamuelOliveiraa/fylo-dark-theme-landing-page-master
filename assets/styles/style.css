@@ -54,35 +54,83 @@ header{
     margin-bottom: 4rem;
     font-family: var(--font-raleway);
     font-weight: 400;
+    position: relative;
 }
 header img{
     width: 80px;
     float: left;
 }
-header nav{
-    float: right;
+header .icon{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 5%;
+    top: 40%;
 }
-header nav ul li{
-    display: inline;
-    margin-left: 1rem;
-    font-size: 0.9rem;
+header .icon .line{
+    display: block;
+    background-color: var(--white);
+    width: 30px;
+    height: 3px;
+    border-radius: 1rem;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+    position: absolute;
 }
-header nav ul #first{
+header .icon .line1{
+    bottom: 70%;
+    right: 5%;
+}
+header .icon .line2{
+    bottom: 45%;
+    right: 5%;
+}
+header .icon .line3{
+    bottom: 20% ;
+    right: 5%;
+}
+header .icon.close .line1{
+    transform: rotate(45deg);
+    bottom: 55%;
+}
+header .icon.close .line2{
+    display: none;
+}
+header .icon.close .line3{
+    transform: rotate(-45deg);
+    bottom: 55%;
+}
+header .text-nav{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 99%;
+    width: 100vw;
+    height: 65vh;
+    background-color: var(--back-intro-email);
+    z-index: 11;
+    padding: 10% 3rem;
+    margin: 0;
+}
+header .text-nav ul{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+header .text-nav ul li{
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+header .text-nav ul #first{
     margin-left: 0;
 }
-header nav ul li a{
+header .text-nav ul li a{
     color: var(--white);
 }
-header nav ul li a:hover{
+header .text-nav ul li a:hover{
     color: var(--blue-gradient);
-    animation: bounce .4s;
 }
-@keyframes bounce{
-    10%{
-        transform: translateY(-7px);
-    }
-}
-
 
 /* TEXT 1 */
 .text1{
@@ -267,12 +315,11 @@ header nav ul li a:hover{
     background-color: var(--blue-gradient);
 }
 
-
 /* FOOTER */
 footer{
     background-color: var(--back-footer);
     padding: 3rem 2.5rem;
-    padding-top: 17rem;
+    padding-top: 18rem;
 }
 footer img{
     float: left;
@@ -315,7 +362,6 @@ footer .social-media .bx:hover{
     border: 1px solid var(--blue-gradient);
     animation: bounce .4s;
 }
-
 footer #me{
     text-align: center;
 }
@@ -329,6 +375,30 @@ footer #me a:hover{
 @media screen and (min-width: 750px) {
     :root{
         font-size: 14px;
+    }
+    header .icon{
+        display: none;
+    }
+    header .text-nav{
+        display: block;
+        float: right;
+        position: static;
+        background: none;
+        width: 200px;
+        height: 10%;
+        padding: 0;
+        line-height: 1.5rem;
+    }
+    header .text-nav ul li{
+        display: inline;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
+    header .text-nav ul #first{
+        margin-left: 0;
+    }
+    header .text-nav ul li a{
+        color: var(--white);
     }
     
     .text1 p{
