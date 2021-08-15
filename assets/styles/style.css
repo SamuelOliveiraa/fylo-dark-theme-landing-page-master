@@ -232,7 +232,7 @@ header .text-nav ul li a:hover{
 .testimonials{
     clear: both;
     margin: auto;
-    margin-bottom: 26rem;
+    margin-bottom: 25rem;
 }
 .testimonials .testimonial1{
     position: relative;
@@ -319,7 +319,7 @@ header .text-nav ul li a:hover{
 footer{
     background-color: var(--back-footer);
     padding: 3rem 2.5rem;
-    padding-top: 18rem;
+    padding-top: 19.5rem;
 }
 footer img{
     float: left;
@@ -483,6 +483,9 @@ footer #me a:hover{
         "tiny-icons list1 list2 social-media";
         clear: both;
         margin-bottom: 3rem;
+    }
+    footer{
+        padding-top: 11rem;
     }
 }
 @media screen and (min-width: 1000px){
