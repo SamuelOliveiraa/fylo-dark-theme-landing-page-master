@@ -10,7 +10,7 @@ $(function(){
     });
 });
 
-// 
+
 var email = document.getElementById('email')
 email.addEventListener('blur', function() {
     if(email.value == ""){
@@ -54,66 +54,3 @@ btn.addEventListener('click', function() {
 
 //I USED JQUERY TO HIDE ADN SHOW NAVBAR
 
-$(document).ready(function () {
-
-    var vpWidth2 = $(window).width();
-
-    if(vpWidth2 <= 750) {
-        $('.icon').show()
-        $('.text-nav').hide()
-       
-        if($('.icon').hasClass('close')){
-            $('.icon').removeClass('close')
-            $('.text-nav').hide()
-        }
-
-        $('header .text-nav ul li a').click(function() {
-            $('.icon').removeClass('close')
-            $('.text-nav').hide()
-        })
-    }else if(vpWidth2 > 751 ){
-        $('.icon').hide()
-        $('.text-nav').show()
-
-        $('header .text-nav ul li a').click(function() {
-            $('.text-nav').show()
-        })
-    }
-
-    $(window).resize(function() {
-        var vpWidth = $(window).width();
-
-        $('header .text-nav ul li a').click(function() {
-            $('.icon').removeClass('close')
-            $('.text-nav').hide()
-        })
-
-        if(vpWidth <= 750) {
-            
-            $('.icon').show()
-            $('.text-nav').hide()
-           
-            if($('.icon').hasClass('close')){
-                $('.icon').removeClass('close')
-                $('.text-nav').hide()
-            }
-
-            $('header .text-nav ul li a').click(function() {
-                $('.icon').removeClass('close')
-                $('.text-nav').hide()
-            })
-        }else if(vpWidth > 751 ){
-            $('.icon').hide()
-            $('.text-nav').show()
-
-            $('header .text-nav ul li a').click(function() {
-                $('.text-nav').show()
-            })
-        }
-    })
-    
-    $('.icon').click(function() {
-        $(".icon").toggleClass("close")
-        $('.text-nav').toggle()
-    })
-})
